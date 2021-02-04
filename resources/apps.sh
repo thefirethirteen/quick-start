@@ -1,5 +1,5 @@
 # apps.sh
-# version 17
+# version 18
 
 cd apps
 
@@ -27,28 +27,26 @@ then
     bash development.sh
 fi
 
-#spotify.sh
-echo -e "\e[1;33mWould you like to install Spotify? y/n \e[0m"
+#streaming.sh
+echo -e "\e[1;33mWould you like to install any streaming apps? y/n \e[0m"
 read USER_INPUT
 if [ "$USER_INPUT" == "y" ]
 then
-    bash spotify.sh
+    bash streaming.sh
 fi
 
-#steam.sh
-echo -e "\e[1;33mWould you like to install Steam? y/n \e[0m"
+#games.sh
+echo -e "\e[1;33mWould you like to install any games? y/n \e[0m"
 read USER_INPUT
 if [ "$USER_INPUT" == "y" ]
 then
-    bash steam.sh
+    bash games.sh
 fi
 
-#wine.sh
-echo -e "\e[1;33mWould you like to install wine? y/n \e[0m"
+#miscellaneous.sh
+echo -e "\e[1;33mWould you like to install any miscellaneous apps? y/n \e[0m"
 read USER_INPUT
 if [ "$USER_INPUT" == "y" ]
 then
-    bash wine.sh
+    bash miscellaneous.sh
 fi
-
-
