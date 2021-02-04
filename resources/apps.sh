@@ -1,22 +1,30 @@
 # apps.sh
-# version 16
+# version 17
 
 cd apps
 
-#discord.sh
-echo -e "\e[1;33mWould you like to install discord? y/n \e[0m"
+#office.sh
+echo -e "\e[1;33mWould you like to install any office suites? y/n \e[0m"
 read USER_INPUT
 if [ "$USER_INPUT" == "y" ]
 then
-    bash discord.sh
+    bash office.sh
 fi
 
-#codeblocks.sh
-echo -e "\e[1;33mWould you like to install Code::Blocks? y/n \e[0m"
+#social.sh
+echo -e "\e[1;33mWould you like to install any social apps? y/n \e[0m"
 read USER_INPUT
 if [ "$USER_INPUT" == "y" ]
 then
-    bash codeblocks.sh
+    bash social.sh
+fi
+
+#development.sh
+echo -e "\e[1;33mWould you like to install any development apps? y/n \e[0m"
+read USER_INPUT
+if [ "$USER_INPUT" == "y" ]
+then
+    bash development.sh
 fi
 
 #spotify.sh
@@ -43,10 +51,4 @@ then
     bash wine.sh
 fi
 
-#office.sh
-echo -e "\e[1;33mWould you like to install any office suites? y/n \e[0m"
-read USER_INPUT
-if [ "$USER_INPUT" == "y" ]
-then
-    bash office.sh
-fi
+

@@ -1,5 +1,5 @@
 # start.sh
-# version 7
+# version 8
 
 cd resources
 
@@ -11,3 +11,7 @@ if [ "$USER_INPUT" == "y" ]
 then
     bash main.sh
 fi
+
+echo -e "\e[1;33mIt is recommended to restart your computer.  \e[0m"
+
+echo -e "\e[1;46mEnding script! \e[0m"
