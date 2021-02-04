@@ -1,5 +1,5 @@
 # main.sh
-# version 5
+# version 8
 
 sudo apt-get update
 
@@ -11,12 +11,12 @@ then
     sudo apt-get -y --allow-downgrades upgrade
 fi
 
-#broadcom.sh
-echo -e "\e[1;33mWould you like to install any broadcom drivers? y/n \e[0m"
+#runtimes.sh
+echo -e "\e[1;33mWould you like to install any runtimes? y/n \e[0m"
 read USER_INPUT
 if [ "$USER_INPUT" == "y" ]
 then
-    bash broadcom.sh
+    bash runtimes.sh
 fi
 
 #de.sh
