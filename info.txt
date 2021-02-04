@@ -1,0 +1,1 @@
+To use the quick-start script, open a terminal in the quick-start folder and type "sudo bash start.sh" then type your password.
