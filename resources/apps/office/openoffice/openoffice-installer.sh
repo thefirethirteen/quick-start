@@ -1,5 +1,5 @@
 # openoffice-installer.sh
-# version 2
+# version 4
 
 cd openoffice-installer
 
@@ -12,7 +12,7 @@ echo -e "\e[1;45mInstalling Apache OpenOffice $VERSION! \e[0m"
 
 cd temp
 
-wget "https://sourceforge.net/projects/openofficeorg.mirror/files/"$VERSION"/binaries/en-GB/Apache_OpenOffice_"$VERSION"_Linux_x86-64_install-deb_en-GB.tar.gz/download"
+wget -nv -O download "https://sourceforge.net/projects/openofficeorg.mirror/files/"$VERSION"/binaries/en-GB/Apache_OpenOffice_"$VERSION"_Linux_x86-64_install-deb_en-GB.tar.gz/download"
 tar -xf download
 cd en-GB
 cd DEBS
