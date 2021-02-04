@@ -1,6 +1,5 @@
 # main.sh
-# version 8
-
+# version 9
 sudo apt-get update
 
 #package update
@@ -8,7 +7,7 @@ echo -e "\e[1;33mWould you like to install all package updates available? y/n \e
 read USER_INPUT
 if [ "$USER_INPUT" == "y" ]
 then
-    sudo apt-get -y --allow-downgrades upgrade
+    sudo apt-get -qqy --allow-downgrades upgrade
 fi
 
 #runtimes.sh
@@ -54,5 +53,3 @@ fi
 
 #remove unnecessary packages
 sudo apt autoremove -y
-
-echo -e "\e[1;46mEnding script! \e[0m"

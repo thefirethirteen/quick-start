@@ -1,47 +1,7 @@
 # apps.sh
-# version 16
+# version 18
 
 cd apps
-
-#discord.sh
-echo -e "\e[1;33mWould you like to install discord? y/n \e[0m"
-read USER_INPUT
-if [ "$USER_INPUT" == "y" ]
-then
-    bash discord.sh
-fi
-
-#codeblocks.sh
-echo -e "\e[1;33mWould you like to install Code::Blocks? y/n \e[0m"
-read USER_INPUT
-if [ "$USER_INPUT" == "y" ]
-then
-    bash codeblocks.sh
-fi
-
-#spotify.sh
-echo -e "\e[1;33mWould you like to install Spotify? y/n \e[0m"
-read USER_INPUT
-if [ "$USER_INPUT" == "y" ]
-then
-    bash spotify.sh
-fi
-
-#steam.sh
-echo -e "\e[1;33mWould you like to install Steam? y/n \e[0m"
-read USER_INPUT
-if [ "$USER_INPUT" == "y" ]
-then
-    bash steam.sh
-fi
-
-#wine.sh
-echo -e "\e[1;33mWould you like to install wine? y/n \e[0m"
-read USER_INPUT
-if [ "$USER_INPUT" == "y" ]
-then
-    bash wine.sh
-fi
 
 #office.sh
 echo -e "\e[1;33mWould you like to install any office suites? y/n \e[0m"
@@ -49,4 +9,44 @@ read USER_INPUT
 if [ "$USER_INPUT" == "y" ]
 then
     bash office.sh
+fi
+
+#social.sh
+echo -e "\e[1;33mWould you like to install any social apps? y/n \e[0m"
+read USER_INPUT
+if [ "$USER_INPUT" == "y" ]
+then
+    bash social.sh
+fi
+
+#development.sh
+echo -e "\e[1;33mWould you like to install any development apps? y/n \e[0m"
+read USER_INPUT
+if [ "$USER_INPUT" == "y" ]
+then
+    bash development.sh
+fi
+
+#streaming.sh
+echo -e "\e[1;33mWould you like to install any streaming apps? y/n \e[0m"
+read USER_INPUT
+if [ "$USER_INPUT" == "y" ]
+then
+    bash streaming.sh
+fi
+
+#games.sh
+echo -e "\e[1;33mWould you like to install any games? y/n \e[0m"
+read USER_INPUT
+if [ "$USER_INPUT" == "y" ]
+then
+    bash games.sh
+fi
+
+#miscellaneous.sh
+echo -e "\e[1;33mWould you like to install any miscellaneous apps? y/n \e[0m"
+read USER_INPUT
+if [ "$USER_INPUT" == "y" ]
+then
+    bash miscellaneous.sh
 fi
