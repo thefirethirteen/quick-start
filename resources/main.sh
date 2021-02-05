@@ -1,5 +1,6 @@
 # main.sh
-# version 9
+# version 10
+
 sudo apt-get update
 
 #package update
@@ -48,6 +49,14 @@ read USER_INPUT
 if [ "$USER_INPUT" == "y" ]
 then
     bash config.sh
+fi
+
+#manual.sh
+echo -e "\e[1;33mWould you like to copy manuals? y/n \e[0m"
+read USER_INPUT
+if [ "$USER_INPUT" == "y" ]
+then
+    bash manual.sh
 fi
 
 
