@@ -1,5 +1,5 @@
 # customizations.sh
-# version 11
+# version 1.0.0
 
 cd customizations
 

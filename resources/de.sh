@@ -1,5 +1,5 @@
 # de.sh
-# version 4
+# version 1.0.0
 
 cd de
 

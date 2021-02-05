@@ -1,5 +1,5 @@
 # config.sh
-# version 6
+# version 1.0.0
 
 cd config
 

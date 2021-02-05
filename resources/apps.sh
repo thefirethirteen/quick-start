@@ -1,5 +1,5 @@
 # apps.sh
-# version 18
+# version 1.0.0
 
 cd apps
 
