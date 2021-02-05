@@ -1,5 +1,5 @@
 # start.sh
-# version 8
+# version 1.0.0
 
 cd resources
 
