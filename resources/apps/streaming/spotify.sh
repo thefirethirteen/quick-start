@@ -1,5 +1,5 @@
 # spotify.sh
-# version 4
+# version 1.0.0
 
 echo -e "\e[1;45mInstalling Spotify! \e[0m"
 

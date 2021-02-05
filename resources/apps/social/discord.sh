@@ -1,5 +1,5 @@
 # discord.sh
-# version 2
+# version 1.0.0
 
 echo -e "\e[1;45mInstalling discord! \e[0m"
 

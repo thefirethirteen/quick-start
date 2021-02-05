@@ -1,5 +1,5 @@
 # iconpack-obsidian.sh
-# version 8
+# version 1.0.0
 
 echo -e "\e[1;45mAdding iconpack-obsidian! \e[0m"
 

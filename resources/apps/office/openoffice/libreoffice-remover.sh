@@ -1,5 +1,5 @@
 # libreoffice-remover.sh
-# version 7
+# version 1.0.0
 
 echo -e "\e[1;45mRemoving LibreOffice! \e[0m"
 

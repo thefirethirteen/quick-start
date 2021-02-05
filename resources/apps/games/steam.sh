@@ -1,5 +1,5 @@
 # steam.sh
-# version 1
+# version 1.0.0
 
 echo -e "\e[1;45mInstalling Steam! \e[0m"
 

@@ -1,5 +1,5 @@
 # social.sh
-# version 1
+# version 1.0.0
 
 cd development
 

@@ -1,5 +1,5 @@
 # codeblocks.sh
-# version 5
+# version 1.0.0
 
 cd codeblocks
 

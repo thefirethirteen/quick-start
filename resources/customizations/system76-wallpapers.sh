@@ -1,5 +1,5 @@
 # system76-wallpapers
-# version 3
+# version 1.0.0
 
 echo -e "\e[1;45mAdding System76 Wallpapers! \e[0m"
 

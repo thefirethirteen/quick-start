@@ -1,5 +1,5 @@
 # mate.sh
-# version 2
+# version 1.0.0
 
 echo -e "\e[1;45mInstalling the Mate Desktop Environment \e[0m"
 
