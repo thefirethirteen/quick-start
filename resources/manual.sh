@@ -1,12 +1,8 @@
 # manual.sh
-# version 1
+# version 1.0.0
 
-cd manual
+echo "Not available!"
 
-cd resources
+#tar -xf Manuals.tar.xz
 
-tar -xf Manuals.tar.xz
-
-sudo mv Manuals /home/andrewf/
-
-cd ..
+#sudo mv Manuals /home/andrewf/
