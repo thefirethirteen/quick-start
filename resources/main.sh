@@ -1,5 +1,5 @@
 # main.sh
-# version 10
+# version 1.0.0
 
 sudo apt-get update
 
