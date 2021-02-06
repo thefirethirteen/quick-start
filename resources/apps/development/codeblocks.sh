@@ -1,10 +1,10 @@
 # codeblocks.sh
-# version 1.0.4
+# version 1.0.5
 
 echo -e "\e[1;45mInstalling Code::Blocks! \e[0m"
 
 sudo add-apt-repository -y ppa:codeblocks-devs/release
-sudo apt-get -qq -y update
+sudo apt-get -qq update
 
 sudo apt-get -qq -y install codeblocks codeblocks-contrib
 
