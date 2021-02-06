@@ -1,14 +1,14 @@
 # main.sh
-# version 1.1.0
+# version 1.1.1
 
-sudo apt-get update
+sudo apt-get update -qq
 
 #package update
 echo -e "\e[1;33mWould you like to install all package updates available? y/n \e[0m"
 read USER_INPUT
 if [ "$USER_INPUT" == "y" ]
 then
-    sudo apt-get -qqy --allow-downgrades upgrade
+    sudo apt-get upgrade -qqy --allow-downgrades
 fi
 
 #runtimes.sh
@@ -51,6 +51,5 @@ then
     bash manual.sh
 fi
 
-
 #remove unnecessary packages
-sudo apt autoremove -y
+sudo apt-get autoremove -qqy
