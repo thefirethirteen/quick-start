@@ -1,15 +1,13 @@
 # wine.sh
-# version 1.0.1
+# version 1.0.2
 
 echo -e "\e[1;45mInstalling wine! \e[0m"
 
 sudo dpkg --add-architecture i386
 
-cd resources
 wget -nc https://dl.winehq.org/wine-builds/winehq.key
 sudo apt-key add winehq.key
 rm -f winehq.key
-cd ..
 
 sudo add-apt-repository -y 'deb https://dl.winehq.org/wine-builds/ubuntu/ groovy main'
 sudo apt-get update
