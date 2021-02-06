@@ -1,5 +1,5 @@
 # main.sh
-# version 1.1.2
+# version 1.1.3
 
 sudo apt-get -qq update
 
@@ -44,12 +44,12 @@ then
 fi
 
 #manual.sh
-echo -e "\e[1;33mWould you like to copy manuals? y/n \e[0m"
-read USER_INPUT
-if [ "$USER_INPUT" == "y" ]
-then
-    bash manual.sh
-fi
+#echo -e "\e[1;33mWould you like to copy manuals? y/n \e[0m"
+#read USER_INPUT
+#if [ "$USER_INPUT" == "y" ]
+#then
+#    bash manual.sh
+#fi
 
 #remove unnecessary packages
 sudo apt-get -qq -y autoremove
