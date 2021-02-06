@@ -1,5 +1,5 @@
 # main.sh
-# version 1.0.0
+# version 1.1.0
 
 sudo apt-get update
 
@@ -41,14 +41,6 @@ read USER_INPUT
 if [ "$USER_INPUT" == "y" ]
 then
     bash customizations.sh
-fi
-
-#config.sh
-echo -e "\e[1;33mWould you like to copy configs? y/n \e[0m"
-read USER_INPUT
-if [ "$USER_INPUT" == "y" ]
-then
-    bash config.sh
 fi
 
 #manual.sh
