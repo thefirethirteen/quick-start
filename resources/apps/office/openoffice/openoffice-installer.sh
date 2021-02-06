@@ -1,5 +1,5 @@
 # openoffice-installer.sh
-# version 1.0.0
+# version 1.0.1
 
 echo -e "\e[1;33mWhat version of Apache OpenOffice would you like to install? \e[0m"
 echo -e "\e[1;33mAvailable versions: 3.4.1; 4.0.0-4.0.1; 4.1.0-4.1.8 \e[0m"
@@ -18,6 +18,6 @@ sudo dpkg -i *.deb
 cd ..
 cd ..
 cd ..
-rm -rf *
+rm -rf download
 
 echo -e "\e[1;32mApache OpenOffice $VERSION has been installed! \e[0m"
