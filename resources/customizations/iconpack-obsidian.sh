@@ -1,5 +1,5 @@
 # iconpack-obsidian.sh
-# version 1.0.0
+# version 1.1.0
 
 echo -e "\e[1;45mAdding iconpack-obsidian! \e[0m"
 
@@ -11,5 +11,4 @@ cd ..
 
 rm -rf iconpack-obsidian
 
-echo -e "\e[1;32miconpack-obsidian has been installed to /usr/share/icons \e[0m"
-echo -e "\e[1;32miconpack-obsidian has been added! \e[0m"
+echo -e "\e[1;32mThe icons from iconpack-obsidian have been added to /usr/share/icons \e[0m"
