@@ -1,8 +1,8 @@
 # discord.sh
-# version 1.0.3
+# version 1.0.4
 
-echo -e "\e[1;45mInstalling discord! \e[0m"
+echo -e "Installing discord!"
 
-sudo apt-get -qq -y install discord
+sudo apt-get -y install discord
 
-echo -e "\e[1;32mDiscord has been installed! \e[0m"
+echo -e "Discord has been installed!"
