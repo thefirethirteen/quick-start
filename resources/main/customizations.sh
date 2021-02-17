@@ -1,5 +1,5 @@
 # customizations.sh
-# version 1.0.1
+# version 1.1.0
 
 cd customizations
 
@@ -10,14 +10,6 @@ if [ "$USER_INPUT" == "y" ]
 then
     bash system76-wallpapers.sh
 fi
-
-#extra-wallpapers.sh
-#echo -e "\e[1;33mWould you like to install extra wallpapers? y/n \e[0m"
-#read USER_INPUT
-#if [ "$USER_INPUT" == "y" ]
-#then
-#    bash extra-wallpapers.sh
-#fi
 
 #iconpack-obsidian.sh
 echo -e "\e[1;33mWould you like to install iconpack-obsidian? y/n \e[0m"
