@@ -1,16 +1,16 @@
 #!/bin/sh
 # start.sh
-# version 2.0.0
+# version 2.0.1
 
 cd resources
 
+#prerequisite for required packages
 sudo apt-get update
 
 #required packages
 sudo apt-get -y install python3
-sudo apt-get -y install python-is-python3
 
-python main.py
+python3 main.py
 
 #echo "Which script would you like to start?"
 
