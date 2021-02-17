@@ -1,13 +1,22 @@
+#!/bin/sh
 # start.sh
-# version 1.0.1
+# version 2.0.0
 
 cd resources
 
-echo -e "\e[1;33mWhich script would you like to start? \e[0m"
+sudo apt-get update
 
-echo "Available scripts: main.sh"
+#required packages
+sudo apt-get -y install python3
+sudo apt-get -y install python-is-python3
 
-echo -e "\e[1;33m(If unsure, type main.sh) \e[0m"
+python main.py
 
-read USER_INPUT
-bash "$USER_INPUT"
+#echo "Which script would you like to start?"
+
+#echo "Available scripts: main.sh"
+
+#echo "(If unsure, type main.sh)"
+
+#read USER_INPUT
+#bash "$USER_INPUT"
