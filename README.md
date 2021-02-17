@@ -3,7 +3,7 @@
 A collection of scripts for a quick start on a new computer using any ubuntu-based linux distribution.
 
 ## Tested distros:
-* UNTESTED! Use at your own risk!
+* Ubuntu 20.10
 
 ## Usage:
 
