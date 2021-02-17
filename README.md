@@ -2,9 +2,6 @@
 
 A collection of scripts for a quick start on a new computer using any ubuntu-based linux distribution.
 
-## Supported distros:
-* any Ubuntu-based distribution
-
 ## Tested distros:
 * UNTESTED!
 
