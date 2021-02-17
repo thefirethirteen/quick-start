@@ -1,5 +1,5 @@
 # main.py
-# version 1.0.0
+# version 1.1.0
 
 import os
 
@@ -30,7 +30,7 @@ if USER_INPUT == "y":
         os.system("bash runtimes.sh")
 
     #de.sh
-    print("Do you want to install any desktop environments? [Y/n]")
+    print("Do you want to install any desktop environments? [y/N]")
     USER_INPUT = input()
     if USER_INPUT == "y":
         os.system("bash de.sh")
@@ -39,7 +39,7 @@ if USER_INPUT == "y":
     print("Do you want to install any apps? [Y/n]")
     USER_INPUT = input()
     if USER_INPUT == "y":
-        os.system("bash apps.sh")
+        os.system("python apps.py")
 
     #customizations.sh
     print("Do you want to install any customizations? [Y/n]")
