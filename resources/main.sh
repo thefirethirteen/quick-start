@@ -1,22 +1,26 @@
 # main.sh
-# version 2.0.1
+# version 2.1.0
 
 cd main
 
-echo -e "\e[1;33mThis script will install desktop environments, apps, customizations and copy app configs. \e[0m"
-echo -e "\e[1;33mWould you like to continue? [Y/n] \e[0m"
+echo -e "This script will install desktop environments, apps, customizations and copy app configs."
+echo -e "Do you want to continue? [Y/n]"
 
 read USER_INPUT
 if [ "$USER_INPUT" == "y" ]
 then
     #update package database
     sudo apt-get update
-
+    
+    #required packages
+    #sudo apt-get -y install python3
+    #sudo apt-get -y install python-is-python3
+    
     #required repositories
     sudo add-apt-repository "deb http://archive.ubuntu.com/ubuntu $(lsb_release -sc) main universe restricted multiverse"
 
     #package update
-    echo -e "\e[1;33mWould you like to install all package updates available? [Y/n] \e[0m"
+    echo -e "Do you want to install all package updates available? [Y/n]"
     read USER_INPUT
     if [ "$USER_INPUT" == "y" ]
     then
@@ -24,7 +28,7 @@ then
     fi
 
     #runtimes.sh
-    echo -e "\e[1;33mWould you like to install any runtimes? [Y/n] \e[0m"
+    echo -e "Do you want to install any runtimes? [Y/n]"
     read USER_INPUT
     if [ "$USER_INPUT" == "y" ]
     then
@@ -32,7 +36,7 @@ then
     fi
 
     #de.sh
-    echo -e "\e[1;33mWould you like to install any desktop environments? [Y/n] \e[0m"
+    echo -e "Do you want to install any desktop environments? [Y/n]"
     read USER_INPUT
     if [ "$USER_INPUT" == "y" ]
     then
@@ -40,7 +44,7 @@ then
     fi
 
     #apps.sh
-    echo -e "\e[1;33mWould you like to install any apps? [Y/n] \e[0m"
+    echo -e "Do you want to install any apps? [Y/n]"
     read USER_INPUT
     if [ "$USER_INPUT" == "y" ]
     then
@@ -48,25 +52,15 @@ then
     fi
 
     #customizations.sh
-    echo -e "\e[1;33mWould you like to install any customizations? [Y/n] \e[0m"
+    echo -e "Do you want to install any customizations? [Y/n]"
     read USER_INPUT
     if [ "$USER_INPUT" == "y" ]
     then
         bash customizations.sh
     fi
 
-    #manual.sh
-    #echo -e "\e[1;33mWould you like to copy manuals? [Y/n] \e[0m"
-    #read USER_INPUT
-    #if [ "$USER_INPUT" == "y" ]
-    #then
-    #    bash manual.sh
-    #fi
-
     #remove unnecessary packages
     sudo apt-get -y autoremove
 fi
 
 #echo -e "\e[1;33mAfter restarting, start [next_script_name].sh using start.sh  \e[0m"
-
-echo "Done."
