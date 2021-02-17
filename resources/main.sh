@@ -1,10 +1,10 @@
 # main.sh
-# version 2.0.0
+# version 2.0.1
 
 cd main
 
 echo -e "\e[1;33mThis script will install desktop environments, apps, customizations and copy app configs. \e[0m"
-echo -e "\e[1;33mWould you like to continue? y/n \e[0m"
+echo -e "\e[1;33mWould you like to continue? [Y/n] \e[0m"
 
 read USER_INPUT
 if [ "$USER_INPUT" == "y" ]
@@ -16,7 +16,7 @@ then
     sudo add-apt-repository "deb http://archive.ubuntu.com/ubuntu $(lsb_release -sc) main universe restricted multiverse"
 
     #package update
-    echo -e "\e[1;33mWould you like to install all package updates available? y/n \e[0m"
+    echo -e "\e[1;33mWould you like to install all package updates available? [Y/n] \e[0m"
     read USER_INPUT
     if [ "$USER_INPUT" == "y" ]
     then
@@ -24,7 +24,7 @@ then
     fi
 
     #runtimes.sh
-    echo -e "\e[1;33mWould you like to install any runtimes? y/n \e[0m"
+    echo -e "\e[1;33mWould you like to install any runtimes? [Y/n] \e[0m"
     read USER_INPUT
     if [ "$USER_INPUT" == "y" ]
     then
@@ -32,7 +32,7 @@ then
     fi
 
     #de.sh
-    echo -e "\e[1;33mWould you like to install any desktop environments? y/n \e[0m"
+    echo -e "\e[1;33mWould you like to install any desktop environments? [Y/n] \e[0m"
     read USER_INPUT
     if [ "$USER_INPUT" == "y" ]
     then
@@ -40,7 +40,7 @@ then
     fi
 
     #apps.sh
-    echo -e "\e[1;33mWould you like to install any apps? y/n \e[0m"
+    echo -e "\e[1;33mWould you like to install any apps? [Y/n] \e[0m"
     read USER_INPUT
     if [ "$USER_INPUT" == "y" ]
     then
@@ -48,7 +48,7 @@ then
     fi
 
     #customizations.sh
-    echo -e "\e[1;33mWould you like to install any customizations? y/n \e[0m"
+    echo -e "\e[1;33mWould you like to install any customizations? [Y/n] \e[0m"
     read USER_INPUT
     if [ "$USER_INPUT" == "y" ]
     then
@@ -56,7 +56,7 @@ then
     fi
 
     #manual.sh
-    #echo -e "\e[1;33mWould you like to copy manuals? y/n \e[0m"
+    #echo -e "\e[1;33mWould you like to copy manuals? [Y/n] \e[0m"
     #read USER_INPUT
     #if [ "$USER_INPUT" == "y" ]
     #then
