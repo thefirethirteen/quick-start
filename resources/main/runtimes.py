@@ -1,6 +1,7 @@
 # runtimes.py
-# version 1.0.1
+# version 2.0.0
 
+import subprocess
 import os
 
 os.chdir("runtimes")
@@ -9,4 +10,4 @@ os.chdir("runtimes")
 print("Do you want to install java? [Y/n]")
 USER_INPUT = input()
 if USER_INPUT == "y":
-    os.system("bash java.sh")
+    subprocess.run(["bash", "java.sh"])
