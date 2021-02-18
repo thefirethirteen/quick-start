@@ -1,5 +1,5 @@
 # apps.py
-# version 2.0.0
+# version 2.1.0
 
 import subprocess
 import os
@@ -10,7 +10,7 @@ os.chdir("apps")
 print("Do you want to install any office suites? [Y/n]")
 USER_INPUT = input()
 if USER_INPUT == "y":
-    subprocess.run(["bash", "office.sh"])
+    subprocess.run(["python3", "office.py"])
 
 #social.sh
 print("Do you want to install any social apps? [Y/n]")
