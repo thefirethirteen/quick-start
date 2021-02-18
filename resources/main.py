@@ -1,5 +1,5 @@
 # main.py
-# version 2.0.0
+# version 2.0.1
 
 import subprocess
 import os
@@ -11,6 +11,9 @@ subprocess.run(["sudo", "apt-get", "update"])
 
 #add required repositories
 subprocess.run(["sudo", "add-apt-repository", "-y", "deb http://archive.ubuntu.com/ubuntu $(lsb_release -sc) main universe restricted multiverse"])
+
+#install required packages
+subprocess.run(["sudo", "apt-get", "-y", "install", "curl"])
 
 #upgrade packages
 print("Do you want to install all package updates available? [Y/n]")
