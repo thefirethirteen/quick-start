@@ -1,5 +1,5 @@
 # customizations.py
-# version 2.2.0
+# version 2.3.0
 
 import subprocess
 import os
@@ -22,4 +22,4 @@ if USER_INPUT == "y":
 print("Do you want to install firacode fonts? [Y/n]")
 USER_INPUT = input()
 if USER_INPUT == "y":
-    subprocess.run(["bash", "fonts-firacode.sh"])
+    subprocess.run(["python3", "fonts-firacode.py"])
