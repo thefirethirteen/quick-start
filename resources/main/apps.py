@@ -1,12 +1,12 @@
 # apps.py
-# version 2.1.0
+# version 2.2.0
 
 import subprocess
 import os
 
 os.chdir("apps")
 
-#office.sh
+#office.py
 print("Do you want to install any office suites? [Y/n]")
 USER_INPUT = input()
 if USER_INPUT == "y":
@@ -41,3 +41,9 @@ print("Do you want to install any miscellaneous apps? [Y/n]")
 USER_INPUT = input()
 if USER_INPUT == "y":
     subprocess.run(["bash", "miscellaneous.sh"])
+
+#browser.py
+print("Do you want to install any browsers? [Y/n]")
+USER_INPUT = input()
+if USER_INPUT == "y":
+    subprocess.run(["python3", "browser.py"])
