@@ -1,5 +1,5 @@
 # customizations.py
-# version 1.0.1
+# version 1.0.2
 
 import os
 
@@ -13,7 +13,7 @@ if USER_INPUT == "y":
 
 #iconpack-obsidian.sh
 print("Do you want to install iconpack-obsidian? [y/n]")
-USER_INPUT - input()
+USER_INPUT = input()
 if USER_INPUT == "y":
     os.system("bash iconpack-obsidian.sh")
 
