@@ -1,5 +1,5 @@
 # customizations.py
-# version 2.1.0
+# version 2.2.0
 
 import subprocess
 import os
@@ -16,7 +16,7 @@ if USER_INPUT == "y":
 print("Do you want to install iconpack-obsidian? [y/n]")
 USER_INPUT = input()
 if USER_INPUT == "y":
-    subprocess.run(["bash", "iconpack-obsidian.sh"])
+    subprocess.run(["python3", "iconpack-obsidian.py"])
 
 #fonts-firacode.sh
 print("Do you want to install firacode fonts? [Y/n]")
