@@ -1,6 +1,7 @@
 # apps.py
-# version 1.0.1
+# version 2.0.0
 
+import subprocess
 import os
 
 os.chdir("apps")
@@ -9,34 +10,34 @@ os.chdir("apps")
 print("Do you want to install any office suites? [Y/n]")
 USER_INPUT = input()
 if USER_INPUT == "y":
-    os.system("bash office.sh")
+    subprocess.run(["bash", "office.sh"])
 
 #social.sh
 print("Do you want to install any social apps? [Y/n]")
 USER_INPUT = input()
 if USER_INPUT == "y":
-    os.system("bash social.sh")
+    subprocess.run(["bash", "social.sh"])
 
 #development.sh
 print("Do you want to install any development apps? [Y/n]")
 USER_INPUT = input()
 if USER_INPUT == "y":
-    os.system("bash development.sh")
+    subprocess.run(["bash", "development.sh"])
 
 #streaming.sh
 print("Do you want to install any streaming apps? [Y/n]")
 USER_INPUT = input()
 if USER_INPUT == "y":
-    os.system("bash streaming.sh")
+    subprocess.run(["bash", "streaming.sh"])
 
 #games.sh
 print("Do you want to install any games? [Y/n]")
 USER_INPUT = input()
 if USER_INPUT == "y":
-    os.system("bash games.sh")
+    subprocess.run(["bash", "games.sh"])
 
 #miscellaneous.sh
 print("Do you want to install any miscellaneous apps? [Y/n]")
 USER_INPUT = input()
 if USER_INPUT == "y":
-    os.system("bash miscellaneous.sh")
+    subprocess.run(["bash", "miscellaneous.sh"])
