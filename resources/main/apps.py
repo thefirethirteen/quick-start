@@ -1,5 +1,5 @@
 # apps.py
-# version 2.2.0
+# version 2.3.0
 
 import subprocess
 import os
@@ -18,11 +18,11 @@ USER_INPUT = input()
 if USER_INPUT == "y":
     subprocess.run(["bash", "social.sh"])
 
-#development.sh
+#development.py
 print("Do you want to install any development apps? [Y/n]")
 USER_INPUT = input()
 if USER_INPUT == "y":
-    subprocess.run(["bash", "development.sh"])
+    subprocess.run(["python3", "development.py"])
 
 #streaming.sh
 print("Do you want to install any streaming apps? [Y/n]")
