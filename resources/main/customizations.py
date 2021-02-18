@@ -1,5 +1,5 @@
 # customizations.py
-# version 2.0.0
+# version 2.1.0
 
 import subprocess
 import os
@@ -10,7 +10,7 @@ os.chdir("customizations")
 print("Do you want to install system76-wallpapers? [y/n]")
 USER_INPUT = input()
 if USER_INPUT == "y":
-    subprocess.run(["bash", "system76-wallpapers.sh"])
+    subprocess.run(["python3", "system76-wallpapers.py"])
 
 #iconpack-obsidian.sh
 print("Do you want to install iconpack-obsidian? [y/n]")
