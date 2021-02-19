@@ -1,5 +1,5 @@
 # streaming.py
-# version 1.0.0
+# version 1.1.0
 
 import subprocess
 import os
@@ -10,4 +10,4 @@ os.chdir("streaming")
 print("Do you want to install Spotify? [y/n]")
 USER_INPUT = input()
 if USER_INPUT == "y":
-    subprocess.run(["bash", "spotify.sh"])
+    subprocess.run(["python3", "spotify.py"])
