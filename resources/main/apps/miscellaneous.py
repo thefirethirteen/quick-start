@@ -1,5 +1,5 @@
 # miscellaneous.py
-# version 1.0.0
+# version 1.1.0
 
 import subprocess
 import os
@@ -10,4 +10,4 @@ os.chdir("miscellaneous")
 print("Do you want to install wine? [Y/n]")
 USER_INPUT = input()
 if USER_INPUT == "y":
-    subprocess.run(["bash", "wine.sh"])
+    subprocess.run(["python3", "wine.py"])
