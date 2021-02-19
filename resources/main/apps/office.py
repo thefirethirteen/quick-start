@@ -1,5 +1,5 @@
 # office.py
-# version 1.0.0
+# version 1.1.0
 
 import subprocess
 import os
@@ -10,4 +10,4 @@ os.chdir("office")
 print("Do you want to install Apache OpenOffice? [y/n]")
 USER_INPUT = input()
 if USER_INPUT == "y":
-    subprocess.run(["bash", "openoffice.sh"])
+    subprocess.run(["python3", "openoffice.py"])
