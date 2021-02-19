@@ -1,5 +1,5 @@
 # social.py
-# version 1.0.1
+# version 1.1.0
 
 import subprocess
 import os
@@ -10,4 +10,4 @@ os.chdir("social")
 print("Do you want to install discord? [y/n]")
 USER_INPUT = input()
 if USER_INPUT == "y":
-    subprocess.run(["bash", "discord.sh"])
+    subprocess.run(["python3", "discord.py"])
