@@ -1,8 +1,7 @@
 # libreoffice-remover.py
-# version 1.0.0
+# version 1.0.2
 
 import subprocess
-import os
 
-os.system("sudo apt-get -y remove libreoffice*")
+subprocess.run(["sudo", "apt-get", "-y", "remove", 'libreoffice*'])
 subprocess.run(["sudo", "apt-get", "-y", "autoremove"])
