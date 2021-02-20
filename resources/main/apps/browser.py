@@ -1,12 +1,12 @@
 # browser.py
-# version 1.1.0
+# version 1.1.1
 
 import subprocess
 import os
 
 os.chdir("browser")
 
-#firefox.sh
+#firefox.py
 print("Do you want to install Firefox? [Y/n]")
 USER_INPUT = input()
 if USER_INPUT == "y":

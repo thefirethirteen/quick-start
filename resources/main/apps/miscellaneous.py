@@ -1,12 +1,12 @@
 # miscellaneous.py
-# version 1.1.0
+# version 1.1.1
 
 import subprocess
 import os
 
 os.chdir("miscellaneous")
 
-#wine.sh
+#wine.py
 print("Do you want to install wine? [Y/n]")
 USER_INPUT = input()
 if USER_INPUT == "y":
