@@ -1,5 +1,5 @@
 # iconpack-obsidian.py
-# version 1.1.0
+# version 1.1.1
 
 import subprocess
 import os
@@ -10,4 +10,4 @@ os.chdir("iconpack-obsidian")
 os.system("sudo mv Obsidian* /usr/share/icons")
 os.chdir("..")
 
-subprocess.run(["rm", "-rf", "iconpack-obsidian"])
+subprocess.run(["rm", "-r", "-f", "iconpack-obsidian"])
