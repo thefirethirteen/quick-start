@@ -15,15 +15,10 @@
 #along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 # development.py
-# version 1.2.0
 
 import subprocess
-import os
+#import os
 
-os.chdir("development")
+#os.chdir("development")
 
-#codeblocks.py
-print("Do you want to install Code::Blocks? [y/n]")
-USER_INPUT = input()
-if USER_INPUT == "y":
-    subprocess.run(["python3", "codeblocks.py"])
+print("No development apps available!")
