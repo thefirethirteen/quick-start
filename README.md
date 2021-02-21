@@ -1,6 +1,6 @@
 # quick-start
 
-A collection of scripts for a quick start on a new computer using any ubuntu-based linux distribution.
+A collection of scripts for a quick start on a new computer using any ubuntu-based GNU/Linux distribution.
 
 ## Tested distros:
 * Pop!_OS 20.10
