@@ -15,15 +15,10 @@
 #along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 # miscellaneous.py
-# version 1.2.0
 
 import subprocess
-import os
+#import os
 
-os.chdir("miscellaneous")
+#os.chdir("miscellaneous")
 
-#wine.py
-print("Do you want to install wine? [Y/n]")
-USER_INPUT = input()
-if USER_INPUT == "y":
-    subprocess.run(["python3", "wine.py"])
+print("No miscellaneous apps available!")
