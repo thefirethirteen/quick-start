@@ -15,13 +15,12 @@
 #along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 # main.py
-# version 2.1.0
 
 import subprocess
 import os
 
 #add required repositories
-subprocess.run(["sudo", "add-apt-repository", "-y", "--no-update", "deb http://archive.ubuntu.com/ubuntu $(lsb_release -sc) main universe restricted multiverse"])
+#subprocess.run(["sudo", "add-apt-repository", "-y", "--no-update", "deb http://archive.ubuntu.com/ubuntu $(lsb_release -sc) main universe restricted multiverse"])
 
 #update package database
 subprocess.run(["sudo", "apt-get", "update"])
@@ -30,31 +29,30 @@ subprocess.run(["sudo", "apt-get", "update"])
 subprocess.run(["sudo", "apt-get", "-y", "install", "curl"])
 
 #runtimes.py
-print("Do you want to install any runtimes? [Y/n]")
+print("Do you want to install any runtimes? [y/n]")
 USER_INPUT = input()
 if USER_INPUT == "y":
     subprocess.run(["python3", "runtimes.py"])
 
 #de.py
-print("Do you want to install any desktop environments? [y/N]")
+print("Do you want to install any desktop environments? [y/n]")
 USER_INPUT = input()
 if USER_INPUT == "y":
     subprocess.run(["python3", "de.py"])
 
 #apps.py
-print("Do you want to install any apps? [Y/n]")
+print("Do you want to install any apps? [y/n]")
 USER_INPUT = input()
 if USER_INPUT == "y":
     subprocess.run(["python3", "apps.py"])
 
 #customizations.py
-print("Do you want to install any customizations? [Y/n]")
+print("Do you want to install any customizations? [y/n]")
 USER_INPUT = input()
 if USER_INPUT == "y":
     subprocess.run(["python3", "customizations.py"])
 
-#quick-start-addons
-os.chdir("..")
+#addons.py (quick-start-addons)
 os.chdir("..")
 if os.path.isfile("addons.py"):
     print("Addons detected!")
@@ -63,7 +61,7 @@ else:
     print("No quick-start addons detected!")
 
 #upgrade packages
-print("Do you want to install all package updates available? [Y/n]")
+print("Do you want to install all package updates available? [y/n]")
 USER_INPUT = input()
 if USER_INPUT == "y":
     subprocess.run(["sudo", "apt-get", "-y", "upgrade"])
