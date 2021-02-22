@@ -20,8 +20,6 @@
 import subprocess
 import os
 
-os.chdir("main")
-
 #add required repositories
 subprocess.run(["sudo", "add-apt-repository", "-y", "--no-update", "deb http://archive.ubuntu.com/ubuntu $(lsb_release -sc) main universe restricted multiverse"])
 
