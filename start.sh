@@ -20,7 +20,3 @@
 cd resources
 
 python3 main.py
-
-cd ..
-
-python3 addons.py
