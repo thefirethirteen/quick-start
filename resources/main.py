@@ -55,6 +55,15 @@ USER_INPUT = input()
 if USER_INPUT == "y":
     subprocess.run(["python3", "customizations.py"])
 
+#quick-start-addons
+os.chdir("..")
+os.chdir("..")
+if os.path.isfile("addons.py"):
+    print("Addons detected!")
+    subprocess.run(["python3", "addons.py"])
+else:
+    print("No quick-start addons detected!")
+
 #upgrade packages
 print("Do you want to install all package updates available? [Y/n]")
 USER_INPUT = input()
