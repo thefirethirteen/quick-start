@@ -16,8 +16,11 @@
 
 #!/bin/sh
 # start.sh
-# version 2.2.0
 
 cd resources
 
 python3 main.py
+
+cd ..
+
+python3 addons.py
