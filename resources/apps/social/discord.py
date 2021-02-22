@@ -15,8 +15,9 @@
 #along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 # discord.py
-# version 1.1.0
 
 import subprocess
 
-subprocess.run(["sudo", "apt-get", "-y", "install", "discord"])
+subprocess.run(["wget", "-O", "discord.deb", "https://discord.com/api/download?platform=linux&format=deb"])
+subprocess.run(["sudo", "dpkg", "-i", "discord.deb"])
+subprocess.run(["rm", "-f", "discord.deb"])
