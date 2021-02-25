@@ -20,12 +20,15 @@ import subprocess
 import os
 
 # add required repositories
-# subprocess.run(["sudo", "add-apt-repository", "-y", "--no-update", "universe"])
-# subprocess.run(["sudo", "add-apt-repository", "-y", "--no-update", "multiverse"])
-# subprocess.run(["sudo", "add-apt-repository", "-y", "--no-update", "restricted"])
+subprocess.run(["sudo", "add-apt-repository", "-y", "--no-update", "universe"])
+subprocess.run(["sudo", "add-apt-repository", "-y", "--no-update", "multiverse"])
+subprocess.run(["sudo", "add-apt-repository", "-y", "--no-update", "restricted"])
 
 # update package database
 subprocess.run(["sudo", "apt-get", "update"])
+
+# fix broken packages
+subprocess.run(["sudo", "apt-get", "--fix-broken", "-y", "install"])
 
 # install required packages
 subprocess.run(["sudo", "apt-get", "-y", "install", "curl"])
@@ -67,6 +70,9 @@ print("Do you want to install all package updates available? [y/n]")
 USER_INPUT = input()
 if USER_INPUT == "y":
     subprocess.run(["sudo", "apt-get", "-y", "upgrade"])
+
+# fix broken packages
+subprocess.run(["sudo", "apt-get", "--fix-broken", "-y", "install"])
 
 # remove unnecessary packages
 subprocess.run(["sudo", "apt-get", "-y", "autoremove"])
