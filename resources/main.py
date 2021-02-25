@@ -21,44 +21,54 @@ import os
 
 # prerequisites.run
 os.chdir("main")
+
 subprocess.run(["python3", "prerequisites.py"])
+
 os.chdir("..")
 
 # runtimes.py
 print("Do you want to install any runtimes? [y/n]")
 USER_INPUT = input()
+
 if USER_INPUT == "y":
     subprocess.run(["python3", "runtimes.py"])
 
 # de.py
 print("Do you want to install any desktop environments? [y/n]")
 USER_INPUT = input()
+
 if USER_INPUT == "y":
     subprocess.run(["python3", "de.py"])
 
 # apps.py
 print("Do you want to install any apps? [y/n]")
 USER_INPUT = input()
+
 if USER_INPUT == "y":
     subprocess.run(["python3", "apps.py"])
 
 # customizations.py
 print("Do you want to install any customizations? [y/n]")
 USER_INPUT = input()
+
 if USER_INPUT == "y":
     subprocess.run(["python3", "customizations.py"])
 
 # addons.py (quick-start-addons)
 os.chdir("..")
+
 if os.path.isfile("addons.py"):
     print("Addons detected!")
     subprocess.run(["python3", "addons.py"])
 else:
     print("No quick-start addons detected!")
 
+os.chdir("resources")
+
 # upgrade packages
 print("Do you want to install all package updates available? [y/n]")
 USER_INPUT = input()
+
 if USER_INPUT == "y":
     subprocess.run(["sudo", "apt-get", "-y", "upgrade"])
 
