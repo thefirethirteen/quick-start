@@ -19,19 +19,10 @@
 import subprocess
 import os
 
-# add required repositories
-subprocess.run(["sudo", "add-apt-repository", "-y", "--no-update", "universe"])
-subprocess.run(["sudo", "add-apt-repository", "-y", "--no-update", "multiverse"])
-subprocess.run(["sudo", "add-apt-repository", "-y", "--no-update", "restricted"])
-
-# update package database
-subprocess.run(["sudo", "apt-get", "update"])
-
-# fix broken packages
-subprocess.run(["sudo", "apt-get", "--fix-broken", "-y", "install"])
-
-# install required packages
-subprocess.run(["sudo", "apt-get", "-y", "install", "curl"])
+# prerequisites.run
+os.chdir("main")
+subprocess.run(["python3", "prerequisites.py"])
+os.chdir("..")
 
 # runtimes.py
 print("Do you want to install any runtimes? [y/n]")
