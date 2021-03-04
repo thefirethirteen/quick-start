@@ -15,7 +15,6 @@
 # along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 # apps.py
-# version 2.8.0
 
 import subprocess
 import os

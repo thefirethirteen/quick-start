@@ -15,7 +15,6 @@
 # along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 # runtimes.py
-# version 2.2.0
 
 import subprocess
 import os
