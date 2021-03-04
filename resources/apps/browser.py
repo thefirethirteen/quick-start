@@ -22,7 +22,15 @@ import os
 os.chdir("browser")
 
 # firefox.py
-print("Do you want to install Firefox? [Y/n]")
+print("Do you want to install Firefox? [y/n]")
 USER_INPUT = input()
+
 if USER_INPUT == "y":
     subprocess.run(["python3", "firefox.py"])
+
+# brave.py
+print("Do you want to install Brave? [y/n]")
+USER_INPUT = input()
+
+if USER_INPUT == "y":
+    subprocess.run(["python3", "brave.py"])
