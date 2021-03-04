@@ -19,8 +19,8 @@
 import subprocess
 import os
 
-subprocess.run(["wget", "https://download.jetbrains.com/toolbox/jetbrains-toolbox-1.20.7940.tar.gz"])
-subprocess.run(["tar", "-x", "-f", "-v", "jetbrains-toolbox-1.20.7940.tar.gz"])
+subprocess.run(["wget", "-O", "jetbrains-toolbox-1.20.7940.tar.gz", "https://download.jetbrains.com/toolbox/jetbrains-toolbox-1.20.7940.tar.gz"])
+subprocess.run(["tar", "-x", "-f", "jetbrains-toolbox-1.20.7940.tar.gz"])
 
 os.chdir("jetbrains-toolbox-1.20.7940")
 
