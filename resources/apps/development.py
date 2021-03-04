@@ -29,7 +29,7 @@ if USER_INPUT == "y":
     subprocess.run(["python3", "codeblocks.py"])
 
 # jetbrains-toolbox.py
-print("Do you want to install Steam? [y/n]")
+print("Do you want to install JetBrains Toolbox? [y/n]")
 USER_INPUT = input()
 
 if USER_INPUT == "y":
