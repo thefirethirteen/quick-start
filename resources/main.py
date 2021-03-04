@@ -26,6 +26,17 @@ subprocess.run(["python3", "prerequisites.py"])
 
 os.chdir("..")
 
+# addons.py (quick-start-addons)
+os.chdir("..")
+
+if os.path.isfile("addons.py"):
+    print("Addons detected!")
+    subprocess.run(["python3", "addons.py"])
+else:
+    print("No quick-start addons detected!")
+
+os.chdir("resources")
+
 # runtimes.py
 print("Do you want to install any runtimes? [y/n]")
 USER_INPUT = input()
@@ -53,17 +64,6 @@ USER_INPUT = input()
 
 if USER_INPUT == "y":
     subprocess.run(["python3", "customizations.py"])
-
-# addons.py (quick-start-addons)
-os.chdir("..")
-
-if os.path.isfile("addons.py"):
-    print("Addons detected!")
-    subprocess.run(["python3", "addons.py"])
-else:
-    print("No quick-start addons detected!")
-
-os.chdir("resources")
 
 # upgrade packages
 print("Do you want to install all package updates available? [y/n]")
