@@ -19,7 +19,7 @@
 import subprocess
 import os
 
-# prerequisites.run
+# prerequisites.py
 os.chdir("main")
 
 subprocess.run(["python3", "prerequisites.py"])
