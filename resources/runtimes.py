@@ -24,5 +24,6 @@ os.chdir("runtimes")
 # java.sh
 print("Do you want to install java? [Y/n]")
 USER_INPUT = input()
+
 if USER_INPUT == "y":
     subprocess.run(["python3", "java.py"])
