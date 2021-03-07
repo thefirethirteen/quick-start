@@ -18,23 +18,22 @@
 
 import subprocess
 
-# ensure add-apt-repository can be used
+# prerequisite for repositories
 subprocess.run(["sudo", "apt-get", "-y", "install", "software-properties-common"])
 
-# ensure repositories are added
+# repositories
 subprocess.run(["sudo", "add-apt-repository", "-y", "--no-update", "universe"])
 subprocess.run(["sudo", "add-apt-repository", "-y", "--no-update", "multiverse"])
 subprocess.run(["sudo", "add-apt-repository", "-y", "--no-update", "restricted"])
 
-# ensure package database cache is updated
+# update package database
 subprocess.run(["sudo", "apt-get", "update"])
 
-# ensure packages are fixed
+# fix broken packages
 subprocess.run(["sudo", "apt-get", "--fix-broken", "-y", "install"])
 
-# ensure packages are installed
+# packages
 subprocess.run(["sudo", "apt-get", "-y", "install", "wget"])
 subprocess.run(["sudo", "apt-get", "-y", "install", "curl"])
 subprocess.run(["sudo", "apt-get", "-y", "install", "gnupg"])
 subprocess.run(["sudo", "apt-get", "-y", "install", "apt-transport-https"])
-subprocess.run(["sudo", "apt-get", "-y", "install", "git"])
