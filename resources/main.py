@@ -19,14 +19,14 @@
 import subprocess
 import os
 
-# prerequisites.py
+# prerequisites.run
 os.chdir("main")
 
 subprocess.run(["python3", "prerequisites.py"])
 
 os.chdir("..")
 
-# addons.py (quick-start-addons)
+# addons.py (from quick-start-addons)
 os.chdir("..")
 
 if os.path.isfile("addons.py"):
@@ -73,7 +73,15 @@ if USER_INPUT == "y":
     subprocess.run(["sudo", "apt-get", "-y", "upgrade"])
 
 # fix broken packages
-subprocess.run(["sudo", "apt-get", "--fix-broken", "-y", "install"])
+print("Do you want apt to try to fix broken packages? [y/n]")
+USER_INPUT = input()
+
+if USER_INPUT == "y":
+    subprocess.run(["sudo", "apt-get", "--fix-broken", "-y", "install"])
 
 # remove unnecessary packages
-subprocess.run(["sudo", "apt-get", "-y", "autoremove"])
+print("Do you want to remove unnecessary packages? [y/n]")
+USER_INPUT = input()
+
+if USER_INPUT == "y":
+    subprocess.run(["sudo", "apt-get", "-y", "autoremove"])
