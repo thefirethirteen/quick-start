@@ -30,7 +30,6 @@ os.chdir("..")
 os.chdir("..")
 
 if os.path.isfile("addons.py"):
-    print("Addons detected!")
     subprocess.run(["python3", "addons.py"])
 else:
     print("No quick-start addons detected!")
