@@ -1,5 +1,5 @@
 # quick-start - a collection of scripts for a quick start
-# Copyright (C) 2021 Andrew F
+# Copyright (C) 2021 thefirethirteen
 
 # This program is free software: you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
@@ -18,4 +18,4 @@
 
 import subprocess
 
-subprocess.run(["sudo", "apt-get", "-y", "install", "firefox"])
+subprocess.run(["sudo", "apt-get", "--yes", "install", "firefox"])
