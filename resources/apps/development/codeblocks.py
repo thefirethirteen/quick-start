@@ -1,5 +1,5 @@
 # quick-start - a collection of scripts for a quick start
-# Copyright (C) 2021 Andrew F
+# Copyright (C) 2021 thefirethirteen
 
 # This program is free software: you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
@@ -18,9 +18,15 @@
 
 import subprocess
 
-subprocess.run(["sudo", "add-apt-repository", "-y", "ppa:codeblocks-devs/release"])
+print("Adding codeblocks' ppa")
+
+subprocess.run(["sudo", "add-apt-repository", "--no-update", "--yes", "ppa:codeblocks-devs/release"])
 subprocess.run(["sudo", "apt-get", "update"])
 
-subprocess.run(["sudo", "apt-get", "-y", "install", "codeblocks", "codeblocks-contrib"])
+print("Installing Code::Blocks")
 
-subprocess.run(["sudo", "add-apt-repository", "-y", "-r", "ppa:codeblocks-devs/release"])
+subprocess.run(["sudo", "apt-get", "--yes", "install", "codeblocks", "codeblocks-contrib"])
+
+print("Removing codeblocks' ppa")
+
+subprocess.run(["sudo", "add-apt-repository", "--remove", "--yes", "ppa:codeblocks-devs/release"])
