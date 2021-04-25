@@ -1,6 +1,8 @@
 # quick-start
 
-A collection of scripts for a quick start on a new computer using any ubuntu-based GNU/Linux distribution.
+A collection of scripts for a quick start on a new computer using any ubuntu-based linux distribution.
+
+Each script for any individual application can be used on its own.
 
 ## Tested distros:
 * UNTESTED!
