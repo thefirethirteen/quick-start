@@ -1,5 +1,5 @@
 # quick-start - a collection of scripts for a quick start
-# Copyright (C) 2021 Andrew F
+# Copyright (C) 2021 thefirethirteen
 
 # This program is free software: you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
@@ -19,9 +19,13 @@
 import subprocess
 import os
 
+print("Adding brave's debian repository")
+
 os.system("curl -s https://brave-browser-apt-release.s3.brave.com/brave-core.asc | sudo apt-key --keyring /etc/apt/trusted.gpg.d/brave-browser-release.gpg add -")
 os.system("echo 'deb [arch=amd64] https://brave-browser-apt-release.s3.brave.com/ stable main' | sudo tee /etc/apt/sources.list.d/brave-browser-release.list")
 
 subprocess.run(["sudo", "apt-get", "update"])
 
-subprocess.run(["sudo", "apt-get", "-y", "install", "brave-browser"])
+print("Installing brave")
+
+subprocess.run(["sudo", "apt-get", "--show-progress", "--yes", "install", "brave-browser"])
