@@ -19,15 +19,22 @@
 import subprocess
 import os
 
-subprocess.run(["wget", "-O", "jetbrains-toolbox-1.20.7940.tar.gz", "https://download.jetbrains.com/toolbox/jetbrains-toolbox-1.20.7940.tar.gz"])
-subprocess.run(["tar", "-x", "-f", "jetbrains-toolbox-1.20.7940.tar.gz"])
+print("Getting the JetBrains Toolbox from their website")
 
-os.chdir("jetbrains-toolbox-1.20.7940")
+# ignoring PEP 8: E501 for now
+subprocess.run(["wget", "--output-document=jetbrains-toolbox-1.20.8352.tar.gz", "https://download.jetbrains.com/toolbox/jetbrains-toolbox-1.20.8352.tar.gz"])
+subprocess.run(["tar", "--extract", "--file=jetbrains-toolbox-1.20.8352.tar.gz"])
+
+os.chdir("jetbrains-toolbox-1.20.8352")
+
+print("Marking the appimage as executable (a+x)")
 
 subprocess.run(["chmod", "a+x", "jetbrains-toolbox"])
 subprocess.run(["./jetbrains-toolbox"])
 
 os.chdir("..")
 
-subprocess.run(["rm", "-f", "jetbrains-toolbox-1.20.7940.tar.gz"])
-subprocess.run(["rm", "-r", "-f", "jetbrains-toolbox-1.20.7940"])
+subprocess.run(["rm", "-f", "jetbrains-toolbox-1.20.8352.tar.gz"])
+subprocess.run(["rm", "-r", "-f", "jetbrains-toolbox-1.20.8352"])
+
+print("The Toolbox installs itself in your system and will automatically start with your computer.")
