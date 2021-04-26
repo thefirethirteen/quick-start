@@ -18,7 +18,7 @@
 
 import subprocess
 
-print("Adding codeblocks' ppa")
+print("Adding Code::Blocks' ppa")
 
 subprocess.run(["sudo", "add-apt-repository", "--no-update", "--yes", "ppa:codeblocks-devs/release"])
 subprocess.run(["sudo", "apt-get", "update"])
@@ -27,6 +27,6 @@ print("Installing Code::Blocks")
 
 subprocess.run(["sudo", "apt-get", "--yes", "install", "codeblocks", "codeblocks-contrib"])
 
-print("Removing codeblocks' ppa")
+print("Removing Code::Blocks' ppa")
 
 subprocess.run(["sudo", "add-apt-repository", "--remove", "--yes", "ppa:codeblocks-devs/release"])
